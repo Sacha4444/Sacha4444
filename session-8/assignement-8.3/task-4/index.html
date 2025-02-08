@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>🐢 Turtle JS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../.tumo/turtle-js/style.css"
+    />
+    <script src="../../.tumo/turtle-js/better-turtle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">🐢 Turtle JS</h1>
+      <div class="header-menu">
+        <ul>
+          <li>
+            <a
+              href="https://caesarovich.github.io/better-turtle/classes/Turtle.html#clear"
+              target="_blanck"
+              >📔 Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com/colors/colors_names.asp"
+              target="_blanck"
+              >🌈 Colors</a
+            >
+          </li>
+          <li>
+            <a id="save-button" href="#">💾 Save</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="body-content">
+      <canvas id="turtle-canvas" width="800px" height="800px" class="body-part">
+      </canvas>
+      <div class="body-right">
+        <div class="body-part">
+          <h2>📌 Functions</h2>
+          <ul class="function-list">
+            <li>forward(<span class="code-integer">distance</span>)</li>
+            <li>left(<span class="code-integer">angle</span>)</li>
+            <li>right(<span class="code-integer">angle</span>)</li>
+            <li>
+              goto(<span class="code-integer">x</span>,
+              <span class="code-integer">y</span>)
+            </li>
+            <li>putPenUp()</li>
+            <li>putPenDown()</li>
+            <li>show()</li>
+            <li>hide()</li>
+            <li>clear()</li>
+            <li>setAngle(<span class="code-integer">angle</span>)</li>
+            <li>setWidth(<span class="code-integer">size</span>)</li>
+            <li>
+              setColor(<span class="code-integer">r</span>,
+              <span class="code-integer">g</span>,
+              <span class="code-integer">b</span>)
+            </li>
+            <li>
+              setColor([<span class="code-integer">r</span>,
+              <span class="code-integer">g</span>,
+              <span class="code-integer">b</span>])
+            </li>
+            <li>setColor(<span class="code-string">"name"</span>)</li>
+            <li>setColor(<span class="code-string">"#hexcolor"</span>)</li>
+            <li>
+              setLineCap(<span class="code-string">"butt"</span> |
+              <span class="code-string">"round"</span> |
+              <span class="code-string">"square"</span>)
+            </li>
+            <li>setDelay(<span class="code-integer">milliseconds</span>)</li>
+          </ul>
+        </div>
+        <div class="separator"></div>
+        <div class="body-part">
+          <h2>🕑 Actions</h2>
+          <ul id="action-list"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="../../.tumo/turtle-js/init.js"></script>
+    <script src="turtle.js"></script>
+  </body>
+</html>
